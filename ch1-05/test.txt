@@ -1,0 +1,5 @@
+noun cat
+verb runs
+conj and
+noun dog
+verb barks

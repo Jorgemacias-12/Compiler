@@ -1,0 +1,14 @@
+1 cat
+1 dog
+2 he
+2 she
+3 runs
+3 jumps
+4 quickly
+4 slowly
+5 big
+5 small
+6 on
+6 under
+7 and
+7 but
