@@ -678,9 +678,12 @@ YY_RULE_SETUP
 #line 26 "ch1-05.l"
 {
     if (state != LOOKUP) {
+        printf("Adding word: %s as type %d\n", yytext, state);
         add_word(state, yytext);
     } else {
-        switch (lookup_word(yytext)) {
+        int token = lookup_word(yytext);
+        printf("Token recognized: %s -> %d\n", yytext, token);
+        switch (token) {
             case VERB: return VERB;
             case ADJECTIVE: return ADJECTIVE;
             case ADVERB: return ADVERB;
@@ -696,10 +699,10 @@ YY_RULE_SETUP
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 44 "ch1-05.l"
+#line 48 "ch1-05.l"
 ECHO;
 	YY_BREAK
-#line 703 "lex.yy.c"
+#line 706 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1587,7 +1590,7 @@ int main()
 	return 0;
 	}
 #endif
-#line 44 "ch1-05.l"
+#line 48 "ch1-05.l"
 
 
 int yywrap() {

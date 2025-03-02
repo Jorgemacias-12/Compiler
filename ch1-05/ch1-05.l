@@ -25,9 +25,12 @@
 
 [a-zA-Z]+ {
     if (state != LOOKUP) {
+        printf("Adding word: %s as type %d\n", yytext, state);
         add_word(state, yytext);
     } else {
-        switch (lookup_word(yytext)) {
+        int token = lookup_word(yytext);
+        printf("Token recognized: %s -> %d\n", yytext, token);
+        switch (token) {
             case VERB: return VERB;
             case ADJECTIVE: return ADJECTIVE;
             case ADVERB: return ADVERB;
@@ -40,6 +43,7 @@
         }
     }
 }
+
 
 %%
 
