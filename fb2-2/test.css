@@ -1,0 +1,9 @@
+.page {
+    width: 360px;
+    height: 800px;
+    margin-top: 20rem;
+  }
+  
+  .container {
+    max-height: 500px;
+  }
