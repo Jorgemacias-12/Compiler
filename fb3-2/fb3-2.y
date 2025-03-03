@@ -43,7 +43,8 @@
 stmt: IF exp THEN list ELSE list { $$ = newflow('I', $2, $4, $6); }
     | IF exp THEN list { $$ = newflow('I', $2, $4, NULL); }
     | WHILE exp DO list { $$ = newflow('W', $2, $4, NULL); }
-    | exp ';' { $$ = $1; };
+    | exp ';' { $$ = $1; }
+    | exp { $$ = $1; }
 
 list: /* vacío */ { $$ = NULL; }
     | stmt list { 

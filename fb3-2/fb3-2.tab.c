@@ -399,7 +399,7 @@ union yyalloc
 /* YYNNTS -- Number of nonterminals.  */
 #define YYNNTS  7
 /* YYNRULES -- Number of rules.  */
-#define YYNRULES  28
+#define YYNRULES  29
 /* YYNRULES -- Number of states.  */
 #define YYNSTATES  63
 
@@ -448,9 +448,9 @@ static const yytype_uint8 yytranslate[] =
    YYRHS.  */
 static const yytype_uint8 yyprhs[] =
 {
-       0,     0,     3,    10,    15,    20,    23,    24,    27,    31,
-      35,    39,    43,    47,    50,    54,    57,    59,    61,    65,
-      70,    75,    77,    81,    83,    87,    88,    92,   102
+       0,     0,     3,    10,    15,    20,    23,    25,    26,    29,
+      33,    37,    41,    45,    49,    52,    56,    59,    61,    63,
+      67,    72,    77,    79,    83,    85,    89,    90,    94,   104
 };
 
 /* YYRHS -- A `-1'-separated list of the rules' RHS.  */
@@ -458,23 +458,23 @@ static const yytype_int8 yyrhs[] =
 {
       33,     0,    -1,     7,    30,     8,    29,     9,    29,    -1,
        7,    30,     8,    29,    -1,    10,    30,    11,    29,    -1,
-      30,    21,    -1,    -1,    28,    29,    -1,    30,    13,    30,
-      -1,    30,    15,    30,    -1,    30,    16,    30,    -1,    30,
-      17,    30,    -1,    30,    18,    30,    -1,    19,    30,    -1,
-      22,    30,    23,    -1,    16,    30,    -1,     3,    -1,     4,
-      -1,     4,    14,    30,    -1,     5,    22,    31,    23,    -1,
-       4,    22,    31,    23,    -1,    30,    -1,    30,    24,    31,
-      -1,     4,    -1,     4,    24,    32,    -1,    -1,    33,    28,
-       6,    -1,    33,    12,     4,    25,    32,    26,    14,    29,
-       6,    -1,    33,     1,     6,    -1
+      30,    21,    -1,    30,    -1,    -1,    28,    29,    -1,    30,
+      13,    30,    -1,    30,    15,    30,    -1,    30,    16,    30,
+      -1,    30,    17,    30,    -1,    30,    18,    30,    -1,    19,
+      30,    -1,    22,    30,    23,    -1,    16,    30,    -1,     3,
+      -1,     4,    -1,     4,    14,    30,    -1,     5,    22,    31,
+      23,    -1,     4,    22,    31,    23,    -1,    30,    -1,    30,
+      24,    31,    -1,     4,    -1,     4,    24,    32,    -1,    -1,
+      33,    28,     6,    -1,    33,    12,     4,    25,    32,    26,
+      14,    29,     6,    -1,    33,     1,     6,    -1
 };
 
 /* YYRLINE[YYN] -- source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,    43,    43,    44,    45,    46,    48,    49,    56,    57,
+       0,    43,    43,    44,    45,    46,    47,    49,    50,    57,
       58,    59,    60,    61,    62,    63,    64,    65,    66,    67,
-      68,    70,    71,    73,    74,    76,    77,    81,    85
+      68,    69,    71,    72,    74,    75,    77,    78,    82,    86
 };
 #endif
 
@@ -504,17 +504,17 @@ static const yytype_uint16 yytoknum[] =
 /* YYR1[YYN] -- Symbol number of symbol that rule YYN derives.  */
 static const yytype_uint8 yyr1[] =
 {
-       0,    27,    28,    28,    28,    28,    29,    29,    30,    30,
+       0,    27,    28,    28,    28,    28,    28,    29,    29,    30,
       30,    30,    30,    30,    30,    30,    30,    30,    30,    30,
-      30,    31,    31,    32,    32,    33,    33,    33,    33
+      30,    30,    31,    31,    32,    32,    33,    33,    33,    33
 };
 
 /* YYR2[YYN] -- Number of symbols composing right hand side of rule YYN.  */
 static const yytype_uint8 yyr2[] =
 {
-       0,     2,     6,     4,     4,     2,     0,     2,     3,     3,
-       3,     3,     3,     2,     3,     2,     1,     1,     3,     4,
-       4,     1,     3,     1,     3,     0,     3,     9,     3
+       0,     2,     6,     4,     4,     2,     1,     0,     2,     3,
+       3,     3,     3,     3,     2,     3,     2,     1,     1,     3,
+       4,     4,     1,     3,     1,     3,     0,     3,     9,     3
 };
 
 /* YYDEFACT[STATE-NAME] -- Default reduction number in state STATE-NUM.
@@ -522,13 +522,13 @@ static const yytype_uint8 yyr2[] =
    means the default is an error.  */
 static const yytype_uint8 yydefact[] =
 {
-      25,     0,     1,     0,    16,    17,     0,     0,     0,     0,
-       0,     0,     0,     0,     0,    28,     0,     0,     0,     0,
-       0,     0,    15,    13,     0,    26,     0,     0,     0,     0,
-       0,     5,    18,    21,     0,     0,     6,     6,     0,    14,
-       8,     9,    10,    11,    12,     0,    20,    19,     6,     3,
-       4,    23,     0,    22,     7,     6,     0,     0,     2,    24,
-       6,     0,    27
+      26,     0,     1,     0,    17,    18,     0,     0,     0,     0,
+       0,     0,     0,     0,     6,    29,     0,     0,     0,     0,
+       0,     0,    16,    14,     0,    27,     0,     0,     0,     0,
+       0,     5,    19,    22,     0,     0,     7,     7,     0,    15,
+       9,    10,    11,    12,    13,     0,    21,    20,     7,     3,
+       4,    24,     0,    23,     8,     7,     0,     0,     2,    25,
+       7,     0,    28
 };
 
 /* YYDEFGOTO[NTERM-NUM].  */
@@ -1435,13 +1435,19 @@ yyreduce:
 
   case 6:
 /* Line 1792 of yacc.c  */
-#line 48 "fb3-2.y"
-    { (yyval.a) = NULL; }
+#line 47 "fb3-2.y"
+    { (yyval.a) = (yyvsp[(1) - (1)].a); }
     break;
 
   case 7:
 /* Line 1792 of yacc.c  */
 #line 49 "fb3-2.y"
+    { (yyval.a) = NULL; }
+    break;
+
+  case 8:
+/* Line 1792 of yacc.c  */
+#line 50 "fb3-2.y"
     { 
         if ((yyvsp[(2) - (2)].a) == NULL) 
             (yyval.a) = (yyvsp[(1) - (2)].a);
@@ -1450,129 +1456,129 @@ yyreduce:
     }
     break;
 
-  case 8:
-/* Line 1792 of yacc.c  */
-#line 56 "fb3-2.y"
-    { (yyval.a) = newcmp((yyvsp[(2) - (3)].fn), (yyvsp[(1) - (3)].a), (yyvsp[(3) - (3)].a)); }
-    break;
-
   case 9:
 /* Line 1792 of yacc.c  */
 #line 57 "fb3-2.y"
-    { (yyval.a) = newast('+', (yyvsp[(1) - (3)].a), (yyvsp[(3) - (3)].a)); }
+    { (yyval.a) = newcmp((yyvsp[(2) - (3)].fn), (yyvsp[(1) - (3)].a), (yyvsp[(3) - (3)].a)); }
     break;
 
   case 10:
 /* Line 1792 of yacc.c  */
 #line 58 "fb3-2.y"
-    { (yyval.a) = newast('-', (yyvsp[(1) - (3)].a), (yyvsp[(3) - (3)].a)); }
+    { (yyval.a) = newast('+', (yyvsp[(1) - (3)].a), (yyvsp[(3) - (3)].a)); }
     break;
 
   case 11:
 /* Line 1792 of yacc.c  */
 #line 59 "fb3-2.y"
-    { (yyval.a) = newast('*', (yyvsp[(1) - (3)].a), (yyvsp[(3) - (3)].a)); }
+    { (yyval.a) = newast('-', (yyvsp[(1) - (3)].a), (yyvsp[(3) - (3)].a)); }
     break;
 
   case 12:
 /* Line 1792 of yacc.c  */
 #line 60 "fb3-2.y"
-    { (yyval.a) = newast('/', (yyvsp[(1) - (3)].a), (yyvsp[(3) - (3)].a)); }
+    { (yyval.a) = newast('*', (yyvsp[(1) - (3)].a), (yyvsp[(3) - (3)].a)); }
     break;
 
   case 13:
 /* Line 1792 of yacc.c  */
 #line 61 "fb3-2.y"
-    { (yyval.a) = newast('|', (yyvsp[(2) - (2)].a), NULL); }
+    { (yyval.a) = newast('/', (yyvsp[(1) - (3)].a), (yyvsp[(3) - (3)].a)); }
     break;
 
   case 14:
 /* Line 1792 of yacc.c  */
 #line 62 "fb3-2.y"
-    { (yyval.a) = (yyvsp[(2) - (3)].a); }
+    { (yyval.a) = newast('|', (yyvsp[(2) - (2)].a), NULL); }
     break;
 
   case 15:
 /* Line 1792 of yacc.c  */
 #line 63 "fb3-2.y"
-    { (yyval.a) = newast('M', (yyvsp[(2) - (2)].a), NULL); }
+    { (yyval.a) = (yyvsp[(2) - (3)].a); }
     break;
 
   case 16:
 /* Line 1792 of yacc.c  */
 #line 64 "fb3-2.y"
-    { (yyval.a) = newnum((yyvsp[(1) - (1)].d)); }
+    { (yyval.a) = newast('M', (yyvsp[(2) - (2)].a), NULL); }
     break;
 
   case 17:
 /* Line 1792 of yacc.c  */
 #line 65 "fb3-2.y"
-    { (yyval.a) = newref((yyvsp[(1) - (1)].s)); }
+    { (yyval.a) = newnum((yyvsp[(1) - (1)].d)); }
     break;
 
   case 18:
 /* Line 1792 of yacc.c  */
 #line 66 "fb3-2.y"
-    { (yyval.a) = newasgn((yyvsp[(1) - (3)].s), (yyvsp[(3) - (3)].a)); }
+    { (yyval.a) = newref((yyvsp[(1) - (1)].s)); }
     break;
 
   case 19:
 /* Line 1792 of yacc.c  */
 #line 67 "fb3-2.y"
-    { (yyval.a) = newfunc((yyvsp[(1) - (4)].fn), (yyvsp[(3) - (4)].a)); }
+    { (yyval.a) = newasgn((yyvsp[(1) - (3)].s), (yyvsp[(3) - (3)].a)); }
     break;
 
   case 20:
 /* Line 1792 of yacc.c  */
 #line 68 "fb3-2.y"
-    { (yyval.a) = newcall((yyvsp[(1) - (4)].s), (yyvsp[(3) - (4)].a)); }
+    { (yyval.a) = newfunc((yyvsp[(1) - (4)].fn), (yyvsp[(3) - (4)].a)); }
     break;
 
-  case 22:
+  case 21:
 /* Line 1792 of yacc.c  */
-#line 71 "fb3-2.y"
-    { (yyval.a) = newast('L', (yyvsp[(1) - (3)].a), (yyvsp[(3) - (3)].a)); }
+#line 69 "fb3-2.y"
+    { (yyval.a) = newcall((yyvsp[(1) - (4)].s), (yyvsp[(3) - (4)].a)); }
     break;
 
   case 23:
 /* Line 1792 of yacc.c  */
-#line 73 "fb3-2.y"
-    { (yyval.sl) = newsymlist((yyvsp[(1) - (1)].s), NULL); }
+#line 72 "fb3-2.y"
+    { (yyval.a) = newast('L', (yyvsp[(1) - (3)].a), (yyvsp[(3) - (3)].a)); }
     break;
 
   case 24:
 /* Line 1792 of yacc.c  */
 #line 74 "fb3-2.y"
+    { (yyval.sl) = newsymlist((yyvsp[(1) - (1)].s), NULL); }
+    break;
+
+  case 25:
+/* Line 1792 of yacc.c  */
+#line 75 "fb3-2.y"
     { (yyval.sl) = newsymlist((yyvsp[(1) - (3)].s), (yyvsp[(3) - (3)].sl)); }
     break;
 
-  case 26:
+  case 27:
 /* Line 1792 of yacc.c  */
-#line 77 "fb3-2.y"
+#line 78 "fb3-2.y"
     { 
         printf("= %4.4g\n> ", eval((yyvsp[(2) - (3)].a))); 
         treefree((yyvsp[(2) - (3)].a));
     }
     break;
 
-  case 27:
+  case 28:
 /* Line 1792 of yacc.c  */
-#line 81 "fb3-2.y"
+#line 82 "fb3-2.y"
     {
         dodef((yyvsp[(3) - (9)].s), (yyvsp[(5) - (9)].sl), (yyvsp[(8) - (9)].a));
         printf("Defined %s\n> ", (yyvsp[(3) - (9)].s)->name);
     }
     break;
 
-  case 28:
+  case 29:
 /* Line 1792 of yacc.c  */
-#line 85 "fb3-2.y"
+#line 86 "fb3-2.y"
     { yyerror("Syntax error"); printf("> "); }
     break;
 
 
 /* Line 1792 of yacc.c  */
-#line 1576 "fb3-2.tab.c"
+#line 1582 "fb3-2.tab.c"
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires
@@ -1804,7 +1810,7 @@ yyreturn:
 
 
 /* Line 2055 of yacc.c  */
-#line 86 "fb3-2.y"
+#line 87 "fb3-2.y"
 
 
 static unsigned symhash(char *sym) { 
